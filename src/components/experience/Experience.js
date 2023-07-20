@@ -5,13 +5,13 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 const Experience = () => {
   return (
     <section id="experience">
-      <div className=" flex flex-col space-y-10 items-center justify-center relative py-12 container min-h-screen w-[90%] md:w-full bg-darkblue text-darkblue">
-        <h2 className=" uppercase text-4xl font-bold  text-cream">
-          Professional Experience
+      <div className=" flex flex-col space-y-10 items-center justify-center relative py-12 container min-h-screen bg-darkblue text-darkblue">
+        <h2 className=" uppercase text-4xl font-bold text-center  text-cream">
+          Experience
         </h2>
 
         {/* ex-2 */}
-        <div className="bg-cream text-darkblue flex flex-col max-w-md md:max-w-2xl rounded-lg">
+        <div className="bg-cream text-darkblue flex flex-col max-w-sm md:max-w-2xl rounded-lg">
           <div className="flex flex-col justify-between items-center rounded-lg shadow-sm shadow-white px-4">
             {/* main header */}
             <div className="flex flex-col items-center justify-between w-full pb-2 pt-4 md:space-x-20 md:flex-row border-b border-gray-400">
@@ -20,7 +20,7 @@ const Experience = () => {
             </div>
 
             {/* main content */}
-            <div className="m-8 font-roboto">
+            <div className= "m-8 font-roboto text-sm leading-6 md:leading-9 md:text-md">
               <ul className=" list-disc">
                 <li>
                   Led the college web team as the Webmaster, overseeing the
@@ -52,7 +52,7 @@ const Experience = () => {
           </div>
         </div>
         {/* ex -1 */}
-        <div className="bg-cream text-darkblue flex flex-col max-w-md md:max-w-2xl rounded-lg">
+        <div className="bg-cream text-darkblue flex flex-col max-w-sm md:max-w-2xl rounded-lg">
           <div className="flex flex-col justify-between items-center rounded-lg shadow-sm shadow-white px-4">
             {/* main header */}
             <div className="flex flex-col items-center justify-between w-full pb-2 pt-4 md:space-x-20 md:flex-row border-b border-gray-400">
@@ -61,7 +61,7 @@ const Experience = () => {
             </div>
 
             {/* main content */}
-            <div className="m-8 font-roboto">
+            <div className="m-8 font-roboto text-sm leading-6 md:leading-9 md:text-md">
               <ul className=" list-disc">
                 <li>
                   Developed a Student Data Manager application as a personal
