@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c4009d1.css",
-    "main.js": "/static/js/main.bbb3cea5.js",
+    "main.css": "/static/css/main.6eb0a2e3.css",
+    "main.js": "/static/js/main.667cb5e4.js",
     "static/media/hero-bg.jpg": "/static/media/hero-bg.e9f339327d5c4e67337d.jpg",
     "static/media/professional.jpg": "/static/media/professional.bfdc135619bc4afd6d5c.jpg",
     "static/media/react-meal-app.jpg": "/static/media/react-meal-app.6a545d4d0a80d9813949.jpg",
     "static/media/expense-manager.jpg": "/static/media/expense-manager.fb28e9421763dcf25e00.jpg",
     "static/media/studio-app.png": "/static/media/studio-app.ca4d11e4e542252a3004.png",
-    "static/media/heroleft.png": "/static/media/heroleft.1842222b9d2bec535789.png",
+    "static/media/heroleft.jpg": "/static/media/heroleft.562ac8d9d60f35c2a6e1.jpg",
     "static/media/amazon-product-api.png": "/static/media/amazon-product-api.fe2daa11a6213af571b8.png",
+    "static/media/aws.png": "/static/media/aws.f79028f2fca5f2ed2d80.png",
+    "static/media/numpy-logo-1-500x500.jpg": "/static/media/numpy-logo-1-500x500.2a571eedcb667dae10be.jpg",
+    "static/media/postgresql-logo.png": "/static/media/postgresql-logo.9be4879f839220dcfa5d.png",
+    "static/media/matplotlib-logo-1-500x500.jpg": "/static/media/matplotlib-logo-1-500x500.98ea8e8c55dca0ec44ee.jpg",
     "index.html": "/index.html",
-    "main.4c4009d1.css.map": "/static/css/main.4c4009d1.css.map",
-    "main.bbb3cea5.js.map": "/static/js/main.bbb3cea5.js.map"
+    "main.6eb0a2e3.css.map": "/static/css/main.6eb0a2e3.css.map",
+    "main.667cb5e4.js.map": "/static/js/main.667cb5e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c4009d1.css",
-    "static/js/main.bbb3cea5.js"
+    "static/css/main.6eb0a2e3.css",
+    "static/js/main.667cb5e4.js"
   ]
 }
