@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Sidebar from "./components/ui/Sidebar";
+import Mian from "./components/Mian";
+import Navbar from "./components/ui/Navbar";
+import { SidebarContext } from "./components/store/SidebarContext";
 
 function App() {
+  const [show, setShow] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    });
+  }, [show, isMobile]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <SidebarContext.Provider value={{ isMobile, show, setShow }}>
+        <div className="relative flex w-screen">
+          <Sidebar />
+          {/* main Content */}
+          <Mian>
+            <Navbar />
+          </Mian>
+        </div>
+      </SidebarContext.Provider>
+    </React.Fragment>
   );
 }
 
