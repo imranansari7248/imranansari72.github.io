@@ -6,6 +6,7 @@ import Experience from "./experience/Experience";
 import { SidebarContext } from "./store/SidebarContext";
 import Overlay from "./ui/Overlay";
 import Projects from "./projects/Projects";
+import Skills from "./skills/Skills";
 
 const Mian = (props) => {
   const { show, setShow } = React.useContext(SidebarContext);
@@ -17,6 +18,7 @@ const Mian = (props) => {
       <About />
       <Experience />
       <Projects />
+      <Skills />
       {/* <Professional />
           <Portfolio />
           <Experience /> */}

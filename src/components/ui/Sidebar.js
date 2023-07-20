@@ -1,5 +1,5 @@
 import React from "react";
-import heroleft from "../../assets/images/heroleft.png";
+import heroleft from "../../assets/images/heroleft.jpg";
 import { AiOutlineClose } from "react-icons/ai";
 import { SidebarContext } from "../store/SidebarContext";
 
@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   let myClass = `${!isMobile ? "sticky" : "fixed"} ${
     !show && "hidden"
-  }  h-screen top-0 pl-4 pr-16 md:pr-24 bg-white md:flex z-10 shadow-2xl`;
+  }  h-screen top-0 px-12 md:pr-12  bg-white md:flex z-10 shadow-2xl`;
 
   return (
     <aside className={myClass}>
@@ -27,29 +27,29 @@ const Sidebar = () => {
         <div className="border-t-2 border-darkblue w-full border-opacity-50"></div>
 
         {/* Items */}
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+        <a href="#" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
           <h2 className="font-aght">Home</h2>
         </a>
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+        <a href="#about" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
           <h2 className="font-aght">About</h2>
         </a>
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+        <a href="#experience" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
           <h2 className="font-aght">Experience</h2>
         </a>
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+        <a href="#projects" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
           <h2 className="font-aght">Projects</h2>
         </a>
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+        <a href="#skills" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
           <h2 className="font-aght">Skills</h2>
         </a>
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+        <a href="#education" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
           <h2 className="font-aght">Education</h2>
         </a>
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+        <a href="contact" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
           <h2 className="font-aght">Contact</h2>
         </a>
-        <a className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
-          <h2 className="font-aght">REsume</h2>
+        <a href="#" className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue">
+          <h2 className="font-aght">Resume</h2>
         </a>
       </div>
     </aside>

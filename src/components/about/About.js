@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="About">
+    <section id="about">
       {/* card */}
       <div className="relative container min-h-screen w-full bg-center bg-cover">
         {/* main  */}
@@ -36,7 +36,7 @@ const About = () => {
             </div>
             <div className="flex space-x-2 text-xl mt-6">
               <h2 className="font-bold">Frameworks:</h2>
-              <p>React.js, Express.js, Node.js, </p>
+              <p>React.js, Express.js, Node.js, TailwindCSS </p>
             </div>
             <div className="flex space-x-2 text-xl mt-6">
               <h2 className="font-bold">Tools & Technologies:</h2>
