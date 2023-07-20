@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://imranansari72.github.io/portfolio",
+  "homepage": "https://imranansari72.github.io",
   "dependencies": {
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.3",
