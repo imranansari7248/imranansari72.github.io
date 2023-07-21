@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.55e53f1f.css",
-    "main.js": "/static/js/main.c58b4749.js",
-    "static/media/hero-bg.jpg": "/static/media/hero-bg.e9f339327d5c4e67337d.jpg",
+    "main.css": "/static/css/main.33670dd2.css",
+    "main.js": "/static/js/main.21e92f7c.js",
+    "static/media/experience-bg.jpg": "/static/media/experience-bg.8a8d9d33b87f315cb186.jpg",
     "static/media/professional.jpg": "/static/media/professional.bfdc135619bc4afd6d5c.jpg",
     "static/media/react-meal-app.jpg": "/static/media/react-meal-app.6a545d4d0a80d9813949.jpg",
+    "static/media/hero-bg.jpg": "/static/media/hero-bg.539a8c5c50b965822984.jpg",
     "static/media/expense-manager.jpg": "/static/media/expense-manager.fb28e9421763dcf25e00.jpg",
+    "static/media/education-bg.jpg": "/static/media/education-bg.961bfb2024032f3ac6c9.jpg",
     "static/media/studio-app.png": "/static/media/studio-app.ca4d11e4e542252a3004.png",
     "static/media/heroleft.jpg": "/static/media/heroleft.562ac8d9d60f35c2a6e1.jpg",
     "static/media/amazon-product-api.png": "/static/media/amazon-product-api.fe2daa11a6213af571b8.png",
@@ -14,11 +16,11 @@
     "static/media/postgresql-logo.png": "/static/media/postgresql-logo.9be4879f839220dcfa5d.png",
     "static/media/matplotlib-logo-1-500x500.jpg": "/static/media/matplotlib-logo-1-500x500.98ea8e8c55dca0ec44ee.jpg",
     "index.html": "/index.html",
-    "main.55e53f1f.css.map": "/static/css/main.55e53f1f.css.map",
-    "main.c58b4749.js.map": "/static/js/main.c58b4749.js.map"
+    "main.33670dd2.css.map": "/static/css/main.33670dd2.css.map",
+    "main.21e92f7c.js.map": "/static/js/main.21e92f7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.55e53f1f.css",
-    "static/js/main.c58b4749.js"
+    "static/css/main.33670dd2.css",
+    "static/js/main.21e92f7c.js"
   ]
 }
