@@ -6,6 +6,8 @@ import { SidebarContext } from "../store/SidebarContext";
 const Sidebar = () => {
   const { isMobile, show, setShow } = React.useContext(SidebarContext);
 
+  const [active, setActive] = React.useState(0);
+
   let myClass = `${!isMobile ? "sticky" : "fixed"} ${
     !show && "hidden"
   }  h-screen top-0 w-[60%]  md:w-[30%] bg-white md:flex md:items-center md:justify-center z-10 shadow-2xl`;
@@ -27,60 +29,65 @@ const Sidebar = () => {
         <div className="border-b-2 border-darkblue w-full border-opacity-50"></div>
 
         {/* Items */}
-        <div className="flex flex-col pt-4 gap-2 md:gap-4">
+        <div className="flex flex-col pt-4 gap-4">
           {" "}
-          <a
-            href="#"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">Home</h2>
-          </a>
-          <a
-            href="#about"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">About</h2>
-          </a>
-          <a
-            href="#experience"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">Experience</h2>
-          </a>
-          <a
-            href="#projects"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">Projects</h2>
-          </a>
-          <a
-            href="#skills"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">Skills</h2>
-          </a>
-          <a
-            href="#education"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">Education</h2>
-          </a>
-          <a
-            href="#contact"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">Contact</h2>
-          </a>
-          <a
-            href="#"
-            className="px-4 group flex cursor-pointer flex-col txt-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-          >
-            <h2 className="font-light">Resume</h2>
-          </a>
+          {sidebarLinks.map((link) => {
+            return (<a
+              href={link.link}
+              className="px-4 flex text-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
+            >
+              <h2 className="font-light">{link.name}</h2>
+            </a>)
+          })}
         </div>
       </div>
     </aside>
   );
 };
+
+const sidebarLinks = [
+  {
+    id: 1,
+    name: "Home",
+    link: "#",
+  },
+  {
+    id: 2,
+    name: "About",
+    link: "#about",
+  },
+  {
+    id: 3,
+    name: "Experience",
+    link: "#experience",
+  },
+  {
+    id: 4,
+    name: "Projects",
+
+    link: "#projects",
+  },
+  {
+    id: 5,
+    name: "Skills",
+    link: "#skills",
+  },
+  {
+    id: 6,
+    name: "Education",
+    link: "#education",
+  },
+  {
+    id: 7,
+    name: "Contact",
+    link: "#contact",
+  },
+
+  {
+    id: 8,
+    name: "Resume",
+    link: "#",
+  },
+];
 
 export default Sidebar;

@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = (props) => {
   return (
-    <div className="bg-cream bg-opacity-80 text-darkblue flex flex-col max-w-sm md:max-w-2xl rounded-lg">
+    <div className="bg-cream bg-opacity-80 text-darkblue flex flex-col max-w-[70%] md:max-w-3xl rounded-lg">
       <div className="flex flex-col justify-between items-center rounded-lg shadow-sm shadow-white px-4">
         {/* main header */}
         <div className="flex flex-col items-center justify-between w-full pb-2 pt-4 md:space-x-20 md:flex-row border-b border-gray-400">
@@ -11,7 +11,7 @@ const Experience = (props) => {
         </div>
 
         {/* main content */}
-        <div className="m-8 font-roboto text-sm leading-6 md:leading-9 md:text-md">
+        <div className="m-8 font-roboto text-sm leading-6 md:leading-9 md:text-lg">
           <ul className=" list-disc">
             {props.description.map((desc, index) => {
               return <li key={index}>{desc}</li>;

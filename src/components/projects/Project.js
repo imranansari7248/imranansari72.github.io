@@ -2,7 +2,7 @@ import React from 'react';
 
 const Project = (props) => {
   return (
-    <div className='flex flex-col bg-white rounded-lg overflow-hidden shadow-md '>
+    <div className='flex flex-col bg-white rounded-lg overflow-hidden shadow-md'>
         <div className='w-full overflow-hidden'>
             <img src={props.project.img} alt="" className='w-full h-44' />
         </div>
