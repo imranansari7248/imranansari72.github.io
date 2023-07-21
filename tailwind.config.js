@@ -16,9 +16,10 @@ module.exports = {
         darkblue: "#222831",
       },
       backgroundImage: {
-        'hero': "linear-gradient(to bottom,rgba(15, 211, 254, 0.376), rgba(252, 252, 252, 0.4))",
+        'hero': "linear-gradient(to top,rgba(4, 9, 51, 0.9), rgba(252, 252, 252, 0.5)), url('./assets/images/hero-bg.jpg')",
         'professional-bg': "linear-gradient(to top,rgba(4, 9, 51, 0.9), rgba(252, 252, 252, 0.5)),url('./assets/images/professional.jpg')",
-        'experience-bg': "url('./assets/images/bg-experience.jpg')",
+        'experience-bg': "linear-gradient(to top,rgba(4, 9, 51, 0.2), rgba(238, 238, 238, 0.9)),url('./assets/images/experience-bg.jpg')",
+        'education-bg': "linear-gradient(to top,rgba(4, 9, 51, 0.2), rgba(238, 238, 238, 0.9)),url('./assets/images/education-bg.jpg')",
         'about-bg': "url('./assets/images/About.png')",
       },
       fontFamily: {

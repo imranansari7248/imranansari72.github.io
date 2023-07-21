@@ -4,12 +4,12 @@ const About = () => {
   return (
     <section id="about">
       {/* card */}
-      <div className="relative container min-h-screen w-full bg-center bg-cover">
+      <div className="relative container min-h-screen w-full bg-gray-200">
         {/* main  */}
         <div className="relative flex items-center justify-center w-full flex-col p-10 md:p-16">
           <h2 className="uppercase text-4xl font-bold  text-darkblue">About</h2>
 
-          <div className="mt-10 text-sm font-roboto font-light text-darkblue px-8 py-10 rounded-lg shadow-xl leading-7 md:text-xl md:leading-9">
+          <div className="mt-10 text-sm font-roboto bg-white font-light text-darkblue px-8 py-10 rounded-lg shadow-xl leading-7 md:text-xl md:leading-9">
             <p>
               I am a full stack web developer. I enjoy problem-solving and
               coding. Always strive to bring 100% to the work I do. I have

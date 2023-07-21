@@ -35,6 +35,13 @@ import git from "../../assets/images/skills/git.png";
 import aws from "../../assets/images/skills/aws.png";
 import heroku from "../../assets/images/skills/heroku.png";
 
+// contact icons
+
+import { IoMdCall } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+
 const projectData = [
   {
     id: 1,
@@ -186,4 +193,74 @@ const skills = [
   },
 ];
 
-export { projectData, skills };
+const educations = [
+  {
+    id: 1,
+    university: "Govind Ballabh Pant University of Agriculture and Technology",
+    place: "Pantnagar, Uttarakhand",
+    degree: "B.Tech in Mechanical Engineering",
+    duration: "2020 - Present",
+    cgpa: "7.5/10",
+  },
+  {
+    id: 2,
+    university: "Jawahar Navodaya Vidyalaya",
+    place: "Haridwar, Uttarakhand",
+    degree: "Senior Secondary Education",
+    duration: "2014 - 2019",
+    cgpa: "9/10",
+  },
+];
+
+const experiences = [
+  {
+    id: 1,
+    name: "College Web Team",
+    position: "Webmaster",
+    duration: "August 2021 - Present",
+    place: "GBPUAT, Pantnagar",
+    description: [
+      "Led the college web team as the Webmaster, overseeing the development and maintenance of the college website.",
+      "Managed a team of web developers and designers, coordinating their efforts to ensure seamless collaboration and timely delivery.",
+      "Utilized React.js and Express.js to create interactive and dynamic features on the college website, enhancing the user experience.",
+      "Implemented best practices in web development, including responsive design, accessibility, and optimization techniques.",
+    ],
+    tools: "React.js, Express.js, Node.js, MySQL, HTML/CSS, JavaScript",
+  },
+  {
+    id: 3,
+    name: "Amazon Product API",
+    position: "Web Developer",
+    duration: "June 2021",
+    place: "Remote",
+    description: [
+      "Developed a web application that fetches product data from Amazon using Python, BeautifulSoup, and Requests.",
+      "Deployed the application on Heroku, allowing users to access the application from anywhere.",
+    ],
+    tools: "Python, BeautifulSoup, Requests, Heroku",
+  },
+  {
+    id: 4,
+    name: "STUDENT DATA MANAGER APP",
+    position: "Personal Project",
+    duration: "December 2018 - February 2019",
+    place: "JNV, Haridwar",
+    description: [
+      "Developed a Student Data Manager application as a personal project during my time at JNV, Haridwar.",
+      "Created the application using C++, utilizing SQL and Excel sheets for efficient storage and management of student data.",
+      "Integrated Excel sheets as an interface to facilitate data entry and retrieval by school staff.",
+      "Collaborated closely with school administrators and teachers to understand their requirements and ensure the application met their needs.",
+    ],
+    tools: "C++, SQL, Excel",
+  },
+];
+
+
+const contactIcons = {
+  emailIcon: <MdEmail size={25} />,
+  phoneIcon: <IoMdCall size={25} />,
+  githubIcon: <BsGithub size={25} />,
+  linkedinIcon: <BsLinkedin size={25} />,
+};
+
+export { projectData, skills, educations, experiences, contactIcons };

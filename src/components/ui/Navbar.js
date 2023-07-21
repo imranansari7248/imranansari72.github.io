@@ -7,7 +7,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   const { show, setShow } = React.useContext(SidebarContext);
   return (
-    <nav className="raltive flex items-center justify-between px-10 pt-2 bg-darkblue text-white md:justify-center">
+    <nav className="absolute top-0 right-0 left-0 flex items-center justify-between px-10 pt-2 bg-darkblue bg-opacity-50 text-white md:justify-center">
       {/* <Hmaburger /> */}
       <div className="hover:scale-110 duration-200 md:hidden">
         <AiOutlineMenu size={25} onClick={() => setShow(!show)} />

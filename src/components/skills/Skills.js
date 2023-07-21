@@ -10,7 +10,7 @@ const Skills = () => {
           Skills
         </h2>
 
-        <div className="py-20 mt-6 text-darkblue md:px-4">
+        <div className="py-20 mt-6 text-center text-darkblue md:px-4">
           {skills.map((skill, index) => (
             <Skill key={index} {...skill} />
           ))}

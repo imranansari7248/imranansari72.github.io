@@ -10,7 +10,7 @@ const HeroRight = () => {
           <span className="text-darkblue">'</span>m
         </span>
         <div className="flex flex-col md:flex-row">
-          <span>Imran</span>{" "}
+          <span>Imran {" "}</span>
           <span>
             Ansari <span className="text-darkblue -ml-3">.</span>
           </span>

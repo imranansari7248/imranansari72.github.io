@@ -7,7 +7,7 @@ import HeroContent from "./HeroContent";
 
 const Hero = () => {
   return (
-    <section id="hero" className="bg-lightblue">
+    <section id="hero" className="bg-hero bg-fixed bg-center bg-cover bg-no-repeat pt-24 md:pt-32">
       <HeroRight />
     </section>
   );
