@@ -17,7 +17,6 @@ const Sidebar = () => {
   const observerCallback = async (e, key) => {
     if (e.length && e[0].isIntersecting) {
       setVisibleKey(key);
-      console.log(e[0].target.id, key)
     }
   };
 

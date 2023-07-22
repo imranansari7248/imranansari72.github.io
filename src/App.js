@@ -49,7 +49,6 @@ function App() {
     sections.forEach((section,index) => {
       observerRefs.current[index] = document.querySelectorAll(`#${section}`)[0];
     });
-    console.log(observerRefs.current);
   }, []);
 
   return (
