@@ -8,6 +8,8 @@ const Sidebar = () => {
   const [visibleKey, setVisibleKey] = useState(0);
   const observers = useRef([]);
 
+  const active = " text-lightblue border-l-2 border-b border-lightblue scale-110 shadow transition duration-200";
+
   const onClick = (item, key) => {
     setVisibleKey(key);
   };
@@ -15,6 +17,7 @@ const Sidebar = () => {
   const observerCallback = async (e, key) => {
     if (e.length && e[0].isIntersecting) {
       setVisibleKey(key);
+      console.log(e[0].target.id, key)
     }
   };
 
@@ -61,7 +64,7 @@ const Sidebar = () => {
               <a
                 key={key}
                 href={link.link}
-                className={`px-4 flex text-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue ${key === visibleKey && " text-lightblue border-l-2 border-lightblue scale-110 shadow transition duration-200"}`}
+                className={`px-4 flex text-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue ${key === visibleKey && active }`}
               >
                 <h2 className="font-light">{link.name}</h2>
               </a>
