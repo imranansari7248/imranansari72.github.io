@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.edbf4f41.css",
-    "main.js": "/static/js/main.1201f17d.js",
+    "main.css": "/static/css/main.42d4ac62.css",
+    "main.js": "/static/js/main.391be7cb.js",
     "static/media/experience-bg.jpg": "/static/media/experience-bg.8a8d9d33b87f315cb186.jpg",
     "static/media/professional.jpg": "/static/media/professional.bfdc135619bc4afd6d5c.jpg",
     "static/media/react-meal-app.jpg": "/static/media/react-meal-app.6a545d4d0a80d9813949.jpg",
@@ -16,11 +16,11 @@
     "static/media/postgresql-logo.png": "/static/media/postgresql-logo.9be4879f839220dcfa5d.png",
     "static/media/matplotlib-logo-1-500x500.jpg": "/static/media/matplotlib-logo-1-500x500.98ea8e8c55dca0ec44ee.jpg",
     "index.html": "/index.html",
-    "main.edbf4f41.css.map": "/static/css/main.edbf4f41.css.map",
-    "main.1201f17d.js.map": "/static/js/main.1201f17d.js.map"
+    "main.42d4ac62.css.map": "/static/css/main.42d4ac62.css.map",
+    "main.391be7cb.js.map": "/static/js/main.391be7cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.edbf4f41.css",
-    "static/js/main.1201f17d.js"
+    "static/css/main.42d4ac62.css",
+    "static/js/main.391be7cb.js"
   ]
 }
