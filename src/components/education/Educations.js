@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext} from "react";
 import Education from "./Education";
 import { educations } from "../../assets/data";
+import { SidebarContext } from "../store/SidebarContext";
 
 const Educations = () => {
+  const { observersRef } = useContext(SidebarContext);
   return (
     <section id="education">
       <div className="min-h-screen w-full bg-education-bg bg-fixed bg-center bg-cover bg-no-repeat text-cream text-center">

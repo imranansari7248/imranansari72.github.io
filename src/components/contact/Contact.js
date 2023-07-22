@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext} from "react";
 import { contactIcons } from "../../assets/data";
+import { SidebarContext } from "../store/SidebarContext";
 
 const Contact = () => {
+  const { observersRef } = useContext(SidebarContext);
   const contactClass =
     "group text-md md:text-xl flex gap-2 items-center hover:scale-105 hover:text-gray-400 transition duration-200 cursor-pointer";
   return (
-    <section id="contact">
+    <section  id="contact">
       <div className="bg-darkblue w-full">
         <div className="flex flex-col items-start justify-center p-16 md:p-20 space-y-4 text-white">
           <h1 className="text-4xl font-bold ">Contact</h1>

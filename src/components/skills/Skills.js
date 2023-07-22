@@ -1,10 +1,12 @@
 import React from "react";
 import Skill from "./Skill";
 import { skills } from "../../assets/data";
+import { SidebarContext } from "../store/SidebarContext";
 
 const Skills = () => {
+  const { observersRef } = React.useContext(SidebarContext);
   return (
-    <section id="skills">
+    <section  id="skills">
       <div className="flex flex-col container bg-cream min-h-screen w-full">
         <h2 className="uppercase bg-darkblue text-cream py-10 w-full text-center text-2xl font-bold md:text-4xl">
           Skills

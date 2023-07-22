@@ -1,12 +1,37 @@
-import React from "react";
+import React, { useEffect,useState, useRef } from "react";
 import heroleft from "../../assets/images/heroleft.jpg";
 import { AiOutlineClose } from "react-icons/ai";
 import { SidebarContext } from "../store/SidebarContext";
 
 const Sidebar = () => {
-  const { isMobile, show, setShow } = React.useContext(SidebarContext);
+  const { isMobile, show, setShow, observerRefs } = React.useContext(SidebarContext);
+  const [visibleKey, setVisibleKey] = useState(0);
+  const observers = useRef([]);
 
-  const [active, setActive] = React.useState(0);
+  const onClick = (item, key) => {
+    setVisibleKey(key);
+  };
+
+  const observerCallback = async (e, key) => {
+    if (e.length && e[0].isIntersecting) {
+      setVisibleKey(key);
+    }
+  };
+
+  useEffect(() => {
+    if (observerRefs.current?.length && observers.current) {
+      Array.from(Array(10).keys()).forEach((_u, key) => {
+        observers.current[key] = new IntersectionObserver((e) =>
+          observerCallback(e, key)
+        );
+        if (observerRefs.current[key]) {
+          observers.current[key].observe(observerRefs.current[key]);
+        }
+      });
+    }
+    return () =>
+      observers.current?.forEach((observer) => observer?.current?.disconnect());
+  }, [observerRefs, observers]);
 
   let myClass = `${!isMobile ? "sticky" : "fixed"} ${
     !show && "hidden"
@@ -31,13 +56,16 @@ const Sidebar = () => {
         {/* Items */}
         <div className="flex flex-col pt-4 gap-4">
           {" "}
-          {sidebarLinks.map((link) => {
-            return (<a
-              href={link.link}
-              className="px-4 flex text-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue"
-            >
-              <h2 className="font-light">{link.name}</h2>
-            </a>)
+          {sidebarLinks.map((link, key) => {
+            return (
+              <a
+                key={key}
+                href={link.link}
+                className={`px-4 flex text-semibold text-lg hover:text-lightblue hover:border-l-2 hover:border-b  hover:border-lightblue ${key === visibleKey && " text-lightblue border-l-2 border-lightblue scale-110 shadow transition duration-200"}`}
+              >
+                <h2 className="font-light">{link.name}</h2>
+              </a>
+            );
           })}
         </div>
       </div>

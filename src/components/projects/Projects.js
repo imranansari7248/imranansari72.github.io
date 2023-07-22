@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Project from './Project';
 import { projectData } from '../../assets/data';
+import { SidebarContext } from '../store/SidebarContext';
 
 const Projects = () => {
+  const { observersRef } = useContext(SidebarContext);
   return (
-    <section id='projects'>
+    <section  id='projects'>
         <div className='flex flex-col items-center justify-center min-h-screen w-full bg-cream text-darkblue my-24'>
           {/* title  */}
           <h2 className='text-4xl font-bold px-10 pb-20'>PROJECTS</h2>

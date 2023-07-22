@@ -1,9 +1,11 @@
-import React from "react";
+import React ,{ useContext} from "react";
 import { experiences } from "../../assets/data";
 import Experience from "./Experience";
+import { SidebarContext } from "../store/SidebarContext";
 
 
 const Experiences = () => {
+  const { observersRef } = useContext(SidebarContext);
   return (
     <section id="experience">
       <div className=" flex flex-col space-y-10 items-center justify-center relative py-12 container min-h-screen bg-experience-bg bg-cover bg-center bg-fixed text-darkblue">

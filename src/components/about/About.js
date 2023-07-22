@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
+import { SidebarContext } from "../store/SidebarContext";
 
 const About = () => {
+  const { observersRef } = useContext(SidebarContext);
+
   return (
-    <section id="about">
+    <section  id="about">
       {/* card */}
       <div className="relative container min-h-screen w-full bg-gray-200">
         {/* main  */}
