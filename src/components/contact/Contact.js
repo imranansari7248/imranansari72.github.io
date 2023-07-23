@@ -16,7 +16,7 @@ const Contact = () => {
             open. Whether you have a question or just want to say hi, I'll try
             my best to get back to you!
           </p>
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col animate-fade-up space-y-6">
             {/* phone */}
             <div className={contactClass}>
               <div>{contactIcons.phoneIcon}</div>

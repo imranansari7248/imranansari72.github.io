@@ -12,7 +12,7 @@ const About = () => {
         <div className="relative flex items-center justify-center w-full flex-col p-10 md:p-16">
           <h2 className="uppercase text-4xl font-bold  text-darkblue">About</h2>
 
-          <div className="mt-10 text-sm font-roboto bg-white font-light text-darkblue px-8 py-10 rounded-lg shadow-xl leading-7 md:text-xl md:leading-9">
+          <div className="mt-10 text-sm font-roboto animate-fade-right bg-white font-light text-darkblue px-8 py-10 rounded-lg shadow-xl leading-7 md:text-xl md:leading-9">
             <p>
               I am a full stack web developer. I enjoy problem-solving and
               coding. Always strive to bring 100% to the work I do. I have

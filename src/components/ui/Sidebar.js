@@ -116,7 +116,7 @@ const sidebarLinks = [
   {
     id: 8,
     name: "Resume",
-    link: "#",
+    link: "https://drive.google.com/file/d/1ElAhb9uj8i3QiXCIPbQb9rToxNYax4Gt/view?usp=sharing",
   },
 ];
 
