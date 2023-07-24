@@ -33,13 +33,13 @@ const HeroRight = () => {
 
       <div className="flex max-w-xl animate-fade-up  space-x-2 md:space-x-4 mt-6 mb-24 ml-0">
         <a
-          href="#"
+          href="https://drive.google.com/file/d/1ElAhb9uj8i3QiXCIPbQb9rToxNYax4Gt/view?usp=sharing"
           className="bg-darkblue px-4 py-2 rounded text-white text-sm shadow-md md:font-semibold hover:scale-105 hover:shadow-lg transition duration-300 md:text-lg"
         >
           Download Resume
         </a>
         <a
-          href="#"
+          href="#contact"
           className="bg-white px-4 py-2 rounded text-darkblue text-sm shadow-md md:font-semibold hover:scale-105 hover:shadow-lg transition duration-300 border md:text-lg"
         >
           Contact Me
