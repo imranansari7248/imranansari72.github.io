@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a575d55e.css",
-    "main.js": "/static/js/main.c65cf0dc.js",
+    "main.js": "/static/js/main.22dad9f0.js",
     "static/media/experience-bg.jpg": "/static/media/experience-bg.8a8d9d33b87f315cb186.jpg",
     "static/media/professional.jpg": "/static/media/professional.bfdc135619bc4afd6d5c.jpg",
     "static/media/react-meal-app.jpg": "/static/media/react-meal-app.6a545d4d0a80d9813949.jpg",
@@ -17,10 +17,10 @@
     "static/media/matplotlib-logo-1-500x500.jpg": "/static/media/matplotlib-logo-1-500x500.98ea8e8c55dca0ec44ee.jpg",
     "index.html": "/index.html",
     "main.a575d55e.css.map": "/static/css/main.a575d55e.css.map",
-    "main.c65cf0dc.js.map": "/static/js/main.c65cf0dc.js.map"
+    "main.22dad9f0.js.map": "/static/js/main.22dad9f0.js.map"
   },
   "entrypoints": [
     "static/css/main.a575d55e.css",
-    "static/js/main.c65cf0dc.js"
+    "static/js/main.22dad9f0.js"
   ]
 }
